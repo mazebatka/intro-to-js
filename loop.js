@@ -18,9 +18,9 @@ while(b<100){
 sum=sum+b;
 b++;
 }
-console.log(sum);
+console.log("Sum of your number is "+sum);
 
- //PRINT THE 1st 10 Multiples of 2
+//PRINT THE 1st 10 Multiples of 2
  let c=0;
 while(c<10){
     
@@ -28,12 +28,25 @@ while(c<10){
     console.log(c+"*2="+c*2);
 }
  
+// Write a function printNumbers(start, end) that uses a for loop to print all numbers from start to end inclusive.
 function PrintNumber(x,y){
     
     while(x<=y){
         console.log(x);
-        x=x+1;
-        
+        x++;
 }
 }
-PrintNumber(1,5);
+PrintNumber(1,8);
+
+// Write a function that finds factorial
+function factorial(num) {
+    let result=num;
+    if (num == 0 || num == 1) 
+      console.log(1); 
+    while (num > 1) { 
+      num--;
+      result *= num;
+    }
+   console.log ("Factorial of your number is "+result);
+  }
+  factorial(5);
